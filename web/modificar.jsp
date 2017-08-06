@@ -8,8 +8,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">
 
-
-
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -32,10 +30,8 @@
             if(contador>=1){
                 out.print("<script>alert('el usuario fue modificado correctamente');</script>");
             }
-
             db.commit();
             db.desconectar();
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -77,11 +73,9 @@
                             <td><%=v_apellidos%></td>
                             <td><a href="modificar.jsp?p_cuenta=<%=v_cuenta%>&p_nombres=<%=v_nombres%>&p_apellidos=<%=v_apellidos%>&p_usuario=<%=v_usuario%>&p_password=<%=v_password%>&p_editar=1">modificar</a></td>
                         </tr>
-
 <%
                     }                   
                 db.desconectar();
-
                 } catch (Exception e) {
                     e.printStackTrace();
             }
